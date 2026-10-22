@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #f7f4ec;
+  --color-sage: #8fa899;
+  --color-forest: #34483f;
+  --color-lavender: #c5b9d4;
+  --color-ink: #343a36;
+
+  --font-sans: "DM Sans", sans-serif;
+  --font-display: "Playfair Display", Georgia, serif;
+}

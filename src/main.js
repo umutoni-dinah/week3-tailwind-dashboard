@@ -1,60 +1,52 @@
 import './style.css'
-import heroImg from './assets/hero.png'
-import javascriptLogo from './assets/javascript.svg'
-import viteLogo from './assets/vite.svg'
-import { setupCounter } from './counter.js'
 
 document.querySelector('#app').innerHTML = `
-<section id="center">
-  <div class="hero">
-    <img src="${heroImg}" class="base" width="170" height="179">
-    <img src="${javascriptLogo}" class="framework" alt="JavaScript logo"/>
-    <img src="${viteLogo}" class="vite" alt="Vite logo" />
-  </div>
-  <div>
-    <h1>Get started</h1>
-    <p>Edit <code>src/main.js</code> and save to test <code>HMR</code></p>
-  </div>
-  <button id="counter" type="button" class="counter"></button>
-</section>
+  <div class="min-h-screen bg-paper text-ink font-sans lg:grid lg:grid-cols-[250px_1fr]">
+    <aside class="hidden bg-forest px-6 py-8 text-paper lg:flex lg:flex-col">
+      <a href="#" class="font-display text-2xl font-semibold tracking-wide">
+        DEE'S <span class="text-lavender">BOOKHUB</span>
+      </a>
+      <p class="mt-2 text-sm text-paper/70">A little world between the pages.</p>
 
-<div class="ticks"></div>
-
-<section id="next-steps">
-  <div id="docs">
-    <svg class="icon" role="presentation" aria-hidden="true"><use href="/icons.svg#documentation-icon"></use></svg>
-    <h2>Documentation</h2>
-    <p>Your questions, answered</p>
-    <ul>
-      <li>
-        <a href="https://vite.dev/" target="_blank">
-          <img class="logo" src="${viteLogo}" alt="" />
-          Explore Vite
+      <nav aria-label="Main navigation" class="mt-12 space-y-2">
+        <a href="#" class="flex items-center gap-3 rounded-xl bg-paper/15 px-4 py-3 text-sm font-medium transition hover:bg-paper/20 focus:outline-none focus:ring-2 focus:ring-lavender">
+          <span aria-hidden="true">⌂</span> Overview
         </a>
-      </li>
-      <li>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-          <img class="button-icon" src="${javascriptLogo}" alt="">
-          Learn more
+        <a href="#" class="flex items-center gap-3 rounded-xl px-4 py-3 text-sm text-paper/75 transition hover:bg-paper/10 hover:text-paper focus:outline-none focus:ring-2 focus:ring-lavender">
+          <span aria-hidden="true">▤</span> Books
         </a>
-      </li>
-    </ul>
-  </div>
-  <div id="social">
-    <svg class="icon" role="presentation" aria-hidden="true"><use href="/icons.svg#social-icon"></use></svg>
-    <h2>Connect with us</h2>
-    <p>Join the Vite community</p>
-    <ul>
-      <li><a href="https://github.com/vitejs/vite" target="_blank"><svg class="button-icon" role="presentation" aria-hidden="true"><use href="/icons.svg#github-icon"></use></svg>GitHub</a></li>
-      <li><a href="https://chat.vite.dev/" target="_blank"><svg class="button-icon" role="presentation" aria-hidden="true"><use href="/icons.svg#discord-icon"></use></svg>Discord</a></li>
-      <li><a href="https://x.com/vite_js" target="_blank"><svg class="button-icon" role="presentation" aria-hidden="true"><use href="/icons.svg#x-icon"></use></svg>X.com</a></li>
-      <li><a href="https://bsky.app/profile/vite.dev" target="_blank"><svg class="button-icon" role="presentation" aria-hidden="true"><use href="/icons.svg#bluesky-icon"></use></svg>Bluesky</a></li>
-    </ul>
-  </div>
-</section>
+        <a href="#" class="flex items-center gap-3 rounded-xl px-4 py-3 text-sm text-paper/75 transition hover:bg-paper/10 hover:text-paper focus:outline-none focus:ring-2 focus:ring-lavender">
+          <span aria-hidden="true">▣</span> Orders
+        </a>
+        <a href="#" class="flex items-center gap-3 rounded-xl px-4 py-3 text-sm text-paper/75 transition hover:bg-paper/10 hover:text-paper focus:outline-none focus:ring-2 focus:ring-lavender">
+          <span aria-hidden="true">♡</span> Readers
+        </a>
+        <a href="#" class="flex items-center gap-3 rounded-xl px-4 py-3 text-sm text-paper/75 transition hover:bg-paper/10 hover:text-paper focus:outline-none focus:ring-2 focus:ring-lavender">
+          <span aria-hidden="true">◷</span> Reports
+        </a>
+      </nav>
 
-<div class="ticks"></div>
-<section id="spacer"></section>
+      <p class="mt-auto border-t border-paper/15 pt-6 font-display text-lg italic text-lavender">
+        “A book is a door you can carry.”
+      </p>
+    </aside>
+
+    <main class="min-w-0">
+      <header class="border-b border-forest/10 px-5 py-6 sm:px-8 lg:px-10">
+        <p class="text-sm text-forest/70">Your shelves are in good hands</p>
+        <h1 class="mt-1 font-display text-3xl font-semibold text-forest sm:text-4xl">
+          Welcome back, Dee
+        </h1>
+        <p class="mt-2 text-sm text-ink/70">
+          Every order sends a new story out into the world.
+        </p>
+      </header>
+
+      <section class="px-5 py-8 sm:px-8 lg:px-10">
+        <p class="font-display text-xl italic text-forest">
+          Your bookshop dashboard will grow here, one page at a time.
+        </p>
+      </section>
+    </main>
+  </div>
 `
-
-setupCounter(document.querySelector('#counter'))

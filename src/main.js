@@ -161,7 +161,7 @@ document.querySelector("#app").innerHTML = `
             <td class="whitespace-nowrap px-5 py-4">22 Oct</td>
             <td class="whitespace-nowrap px-5 py-4">RWF 28,900</td>
             <td class="px-5 py-4"><span class="badge bg-emerald-100 text-emerald-800">Paid</span></td>
-badge bg-amber-100 text-amber-800         </tr>
+        </tr>
           <tr class="transition hover:bg-paper/70">
             <td class="whitespace-nowrap px-5 py-4 font-medium text-forest">#BK-2047</td>
             <td class="px-5 py-4">The House in the Cerulean Sea</td>

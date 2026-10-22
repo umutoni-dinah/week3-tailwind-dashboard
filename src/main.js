@@ -118,6 +118,85 @@ document.querySelector('#app').innerHTML = `
     </article>
   </div>
 </section>
+<section aria-labelledby="orders-heading" class="mt-8 px-5 pb-10 sm:px-8 lg:px-10">
+  <div class="flex flex-wrap items-end justify-between gap-3">
+    <div>
+      <p class="text-sm font-medium uppercase tracking-[0.16em] text-forest/60">Fresh from the shelves</p>
+      <h2 id="orders-heading" class="mt-1 font-display text-2xl font-semibold text-forest">Recent orders</h2>
+      <p class="mt-1 text-sm text-ink/65">A few stories finding their way to new homes.</p>
+    </div>
+    <a href="#" class="rounded-full px-4 py-2 text-sm font-medium text-forest transition hover:bg-sage/15 focus:outline-none focus:ring-2 focus:ring-sage">
+      View all orders →
+    </a>
+  </div>
+
+  <div class="mt-5 overflow-hidden rounded-2xl border border-forest/10 bg-white/80 shadow-sm">
+    <div class="overflow-x-auto">
+      <table class="w-full min-w-[760px] text-left text-sm">
+        <thead class="bg-forest/5 text-xs uppercase tracking-wider text-ink/60">
+          <tr>
+            <th scope="col" class="px-5 py-4">Order</th>
+            <th scope="col" class="px-5 py-4">Book</th>
+            <th scope="col" class="px-5 py-4">Reader</th>
+            <th scope="col" class="px-5 py-4">Date</th>
+            <th scope="col" class="px-5 py-4">Amount</th>
+            <th scope="col" class="px-5 py-4">Status</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-forest/10 text-ink">
+          <tr class="transition hover:bg-paper/70">
+            <td class="whitespace-nowrap px-5 py-4 font-medium text-forest">#BK-2048</td>
+            <td class="px-5 py-4">The Midnight Library</td>
+            <td class="px-5 py-4">Nia M.</td>
+            <td class="whitespace-nowrap px-5 py-4">22 Oct</td>
+            <td class="whitespace-nowrap px-5 py-4">RWF 28,900</td>
+            <td class="px-5 py-4"><span class="rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-800">Paid</span></td>
+          </tr>
+          <tr class="transition hover:bg-paper/70">
+            <td class="whitespace-nowrap px-5 py-4 font-medium text-forest">#BK-2047</td>
+            <td class="px-5 py-4">The House in the Cerulean Sea</td>
+            <td class="px-5 py-4">Alex P.</td>
+            <td class="whitespace-nowrap px-5 py-4">22 Oct</td>
+            <td class="whitespace-nowrap px-5 py-4">RWF 19,000</td>
+            <td class="px-5 py-4"><span class="rounded-full bg-amber-100 px-3 py-1 text-xs font-medium text-amber-800">Pending</span></td>
+          </tr>
+          <tr class="transition hover:bg-paper/70">
+            <td class="whitespace-nowrap px-5 py-4 font-medium text-forest">#BK-2046</td>
+            <td class="px-5 py-4">Small Things Like These</td>
+            <td class="px-5 py-4">Sam K.</td>
+            <td class="whitespace-nowrap px-5 py-4">21 Oct</td>
+            <td class="whitespace-nowrap px-5 py-4">RWF 17,000</td>
+            <td class="px-5 py-4"><span class="rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-800">Paid</span></td>
+          </tr>
+          <tr class="transition hover:bg-paper/70">
+            <td class="whitespace-nowrap px-5 py-4 font-medium text-forest">#BK-2045</td>
+            <td class="px-5 py-4">The Song of Achilles</td>
+            <td class="px-5 py-4">Priya D.</td>
+            <td class="whitespace-nowrap px-5 py-4">21 Oct</td>
+            <td class="whitespace-nowrap px-5 py-4">RWF  25,000</td>
+            <td class="px-5 py-4"><span class="rounded-full bg-rose-100 px-3 py-1 text-xs font-medium text-rose-800">Failed</span></td>
+          </tr>
+          <tr class="transition hover:bg-paper/70">
+            <td class="whitespace-nowrap px-5 py-4 font-medium text-forest">#BK-2044</td>
+            <td class="px-5 py-4">Braiding Sweetgrass</td>
+            <td class="px-5 py-4">Lindi N.</td>
+            <td class="whitespace-nowrap px-5 py-4">20 Oct</td>
+            <td class="whitespace-nowrap px-5 py-4">RWF 12,000</td>
+            <td class="px-5 py-4"><span class="rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-800">Paid</span></td>
+          </tr>
+          <tr class="transition hover:bg-paper/70">
+            <td class="whitespace-nowrap px-5 py-4 font-medium text-forest">#BK-2043</td>
+            <td class="px-5 py-4">Atomic Habits</td>
+            <td class="px-5 py-4">James Clear</td>
+            <td class="whitespace-nowrap px-5 py-4">20 Oct</td>
+            <td class="whitespace-nowrap px-5 py-4">RWF 22,265</td>
+            <td class="px-5 py-4"><span class="rounded-full bg-amber-100 px-3 py-1 text-xs font-medium text-amber-800">Pending</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
     </main>
   </div>
 `

@@ -1,6 +1,6 @@
-import './style.css'
+import "./style.css";
 
-document.querySelector('#app').innerHTML = `
+document.querySelector("#app").innerHTML = `
   <div class="min-h-screen bg-paper text-ink font-sans lg:grid lg:grid-cols-[250px_1fr]">
     <aside class="hidden bg-forest px-6 py-8 text-paper lg:flex lg:flex-col">
       <a href="#" class="font-display text-2xl font-semibold tracking-wide">
@@ -81,7 +81,7 @@ document.querySelector('#app').innerHTML = `
   </div>
 
   <div class="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
-    <article class="rounded-2xl border border-forest/10 bg-white/80 p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+    <article class="card p-5">
       <div class="flex items-center justify-between">
         <p class="text-sm font-medium text-ink/65">Books in stock</p>
         <span aria-hidden="true" class="grid size-10 place-items-center rounded-xl bg-sage/20 text-lg text-forest">▤</span>
@@ -90,7 +90,7 @@ document.querySelector('#app').innerHTML = `
       <p class="mt-2 text-sm text-forest">↑ 8.4% <span class="text-ink/55">since last month</span></p>
     </article>
 
-    <article class="rounded-2xl border border-forest/10 bg-white/80 p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+    <article class="card p-5">
       <div class="flex items-center justify-between">
         <p class="text-sm font-medium text-ink/65">Orders this week</p>
         <span aria-hidden="true" class="grid size-10 place-items-center rounded-xl bg-lavender/40 text-lg text-forest">◷</span>
@@ -99,7 +99,7 @@ document.querySelector('#app').innerHTML = `
       <p class="mt-2 text-sm text-forest">↑ 12 new <span class="text-ink/55">since yesterday</span></p>
     </article>
 
-    <article class="rounded-2xl border border-forest/10 bg-white/80 p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+    <article class="card p-5">
       <div class="flex items-center justify-between">
         <p class="text-sm font-medium text-ink/65">Monthly revenue</p>
         <span aria-hidden="true" class="grid size-10 place-items-center rounded-xl bg-sage/20 text-lg text-forest">↗</span>
@@ -108,7 +108,7 @@ document.querySelector('#app').innerHTML = `
       <p class="mt-2 text-sm text-forest">↑ 6.2% <span class="text-ink/55">since last month</span></p>
     </article>
 
-    <article class="rounded-2xl border border-forest/10 bg-white/80 p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+    <article class="card p-5">
       <div class="flex items-center justify-between">
         <p class="text-sm font-medium text-ink/65">Returning readers</p>
         <span aria-hidden="true" class="grid size-10 place-items-center rounded-xl bg-lavender/40 text-lg text-forest">♡</span>
@@ -150,15 +150,15 @@ document.querySelector('#app').innerHTML = `
             <td class="px-5 py-4">Nia M.</td>
             <td class="whitespace-nowrap px-5 py-4">22 Oct</td>
             <td class="whitespace-nowrap px-5 py-4">RWF 28,900</td>
-            <td class="px-5 py-4"><span class="rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-800">Paid</span></td>
-          </tr>
+            <td class="px-5 py-4"><span class="badge bg-emerald-100 text-emerald-800">Paid</span></td>
+badge bg-amber-100 text-amber-800         </tr>
           <tr class="transition hover:bg-paper/70">
             <td class="whitespace-nowrap px-5 py-4 font-medium text-forest">#BK-2047</td>
             <td class="px-5 py-4">The House in the Cerulean Sea</td>
             <td class="px-5 py-4">Alex P.</td>
             <td class="whitespace-nowrap px-5 py-4">22 Oct</td>
             <td class="whitespace-nowrap px-5 py-4">RWF 19,000</td>
-            <td class="px-5 py-4"><span class="rounded-full bg-amber-100 px-3 py-1 text-xs font-medium text-amber-800">Pending</span></td>
+            <td class="px-5 py-4"><span class="badge bg-amber-100 text-amber-800">Pending</span></td>
           </tr>
           <tr class="transition hover:bg-paper/70">
             <td class="whitespace-nowrap px-5 py-4 font-medium text-forest">#BK-2046</td>
@@ -166,7 +166,7 @@ document.querySelector('#app').innerHTML = `
             <td class="px-5 py-4">Sam K.</td>
             <td class="whitespace-nowrap px-5 py-4">21 Oct</td>
             <td class="whitespace-nowrap px-5 py-4">RWF 17,000</td>
-            <td class="px-5 py-4"><span class="rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-800">Paid</span></td>
+            <td class="px-5 py-4"><span class="badge bg-emerald-100 text-emerald-800">Paid</span></td>
           </tr>
           <tr class="transition hover:bg-paper/70">
             <td class="whitespace-nowrap px-5 py-4 font-medium text-forest">#BK-2045</td>
@@ -174,7 +174,7 @@ document.querySelector('#app').innerHTML = `
             <td class="px-5 py-4">Priya D.</td>
             <td class="whitespace-nowrap px-5 py-4">21 Oct</td>
             <td class="whitespace-nowrap px-5 py-4">RWF  25,000</td>
-            <td class="px-5 py-4"><span class="rounded-full bg-rose-100 px-3 py-1 text-xs font-medium text-rose-800">Failed</span></td>
+            <td class="px-5 py-4"><span class="badge bg-rose-100 text-rose-800">Failed</span></td>
           </tr>
           <tr class="transition hover:bg-paper/70">
             <td class="whitespace-nowrap px-5 py-4 font-medium text-forest">#BK-2044</td>
@@ -182,7 +182,7 @@ document.querySelector('#app').innerHTML = `
             <td class="px-5 py-4">Lindi N.</td>
             <td class="whitespace-nowrap px-5 py-4">20 Oct</td>
             <td class="whitespace-nowrap px-5 py-4">RWF 12,000</td>
-            <td class="px-5 py-4"><span class="rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-800">Paid</span></td>
+            <td class="px-5 py-4"><span class="badge bg-emerald-100 text-emerald-800">Paid</span></td>
           </tr>
           <tr class="transition hover:bg-paper/70">
             <td class="whitespace-nowrap px-5 py-4 font-medium text-forest">#BK-2043</td>
@@ -190,7 +190,7 @@ document.querySelector('#app').innerHTML = `
             <td class="px-5 py-4">James Clear</td>
             <td class="whitespace-nowrap px-5 py-4">20 Oct</td>
             <td class="whitespace-nowrap px-5 py-4">RWF 22,265</td>
-            <td class="px-5 py-4"><span class="rounded-full bg-amber-100 px-3 py-1 text-xs font-medium text-amber-800">Pending</span></td>
+            <td class="px-5 py-4"><span class="badge bg-amber-100 text-amber-800">Pending</span></td>
           </tr>
         </tbody>
       </table>
@@ -198,7 +198,7 @@ document.querySelector('#app').innerHTML = `
   </div>
 </section>
 <section class="grid grid-cols-1 gap-5 px-5 pb-10 sm:px-8 lg:px-10 xl:grid-cols-2">
-  <article class="rounded-2xl border border-forest/10 bg-white/80 p-5 shadow-sm sm:p-6">
+  <article class="card p-5 sm:p-6">
     <div>
       <p class="text-sm font-medium uppercase tracking-[0.16em] text-forest/60">Little moments</p>
       <h2 class="mt-1 font-display text-2xl font-semibold text-forest">Recent activity</h2>
@@ -237,7 +237,7 @@ document.querySelector('#app').innerHTML = `
     </ul>
   </article>
 
-  <article class="rounded-2xl border border-forest/10 bg-white/80 p-5 shadow-sm sm:p-6">
+  <article class="card p-5 sm:p-6">
     <div>
       <p class="text-sm font-medium uppercase tracking-[0.16em] text-forest/60">Readers keep reaching for</p>
       <h2 class="mt-1 font-display text-2xl font-semibold text-forest">Bestselling books</h2>
@@ -297,7 +297,7 @@ document.querySelector('#app').innerHTML = `
   </article>
 </section>
 <section aria-labelledby="add-book-heading" class="px-5 pb-12 sm:px-8 lg:px-10">
-  <div class="rounded-2xl border border-forest/10 bg-white/80 p-5 shadow-sm sm:p-7">
+  <div class="card p-5 sm:p-7">
     <div class="mb-6">
       <p class="text-sm font-medium uppercase tracking-[0.16em] text-forest/60">Make room for another story</p>
       <h2 id="add-book-heading" class="mt-1 font-display text-2xl font-semibold text-forest">Add a book</h2>
@@ -344,7 +344,7 @@ document.querySelector('#app').innerHTML = `
 
       <div class="flex flex-wrap gap-3 pt-1 sm:col-span-2">
         <button type="button"
-          class="rounded-full bg-forest px-5 py-3 text-sm font-medium text-paper transition hover:bg-forest/90 focus:outline-none focus:ring-2 focus:ring-sage focus:ring-offset-2">
+          class="btn-primary">
           Add to the shelves
         </button>
         <button type="reset"
@@ -357,4 +357,4 @@ document.querySelector('#app').innerHTML = `
 </section>
     </main>
   </div>
-`
+`;

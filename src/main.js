@@ -2,7 +2,7 @@ import "./style.css";
 
 document.querySelector("#app").innerHTML = `
   <div class="min-h-screen bg-paper text-ink font-sans lg:grid lg:grid-cols-[250px_1fr]">
-    <aside class="hidden bg-forest px-6 py-8 text-paper lg:flex lg:flex-col">
+    <aside id="sidebar" class="hidden bg-forest px-6 py-8 text-paper lg:flex lg:flex-col">
       <a href="#" class="font-display text-2xl font-semibold tracking-wide">
         DEE'S <span class="text-lavender">BOOKHUB</span>
       </a>
@@ -33,6 +33,16 @@ document.querySelector("#app").innerHTML = `
 
     <main class="min-w-0">
      <header class="border-b border-forest/10 px-5 py-6 sm:px-8 lg:px-10">
+     <button
+  id="menu-toggle"
+  type="button"
+  aria-controls="sidebar"
+  aria-expanded="false"
+  aria-label="Open navigation"
+  class="mb-4 grid size-10 place-items-center rounded-full border border-forest/15 text-forest transition hover:bg-sage/10 focus:outline-none focus:ring-2 focus:ring-sage lg:hidden"
+>
+  <span aria-hidden="true">☰</span>
+</button>
   <div class="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
     <div>
       <p class="text-sm text-forest/70">Your shelves are in good hands</p>
@@ -358,3 +368,17 @@ badge bg-amber-100 text-amber-800         </tr>
     </main>
   </div>
 `;
+const menuToggle = document.querySelector('#menu-toggle')
+const sidebar = document.querySelector('#sidebar')
+
+menuToggle.addEventListener('click', () => {
+  const isOpen = menuToggle.getAttribute('aria-expanded') === 'true'
+
+  sidebar.classList.toggle('hidden')
+  menuToggle.setAttribute('aria-expanded', String(!isOpen))
+  menuToggle.setAttribute(
+    'aria-label',
+    isOpen ? 'Open navigation' : 'Close navigation'
+  )
+  menuToggle.querySelector('span').textContent = isOpen ? '☰' : '×'
+})

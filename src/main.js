@@ -32,15 +32,40 @@ document.querySelector('#app').innerHTML = `
     </aside>
 
     <main class="min-w-0">
-      <header class="border-b border-forest/10 px-5 py-6 sm:px-8 lg:px-10">
-        <p class="text-sm text-forest/70">Your shelves are in good hands</p>
-        <h1 class="mt-1 font-display text-3xl font-semibold text-forest sm:text-4xl">
-          Welcome back, Dee
-        </h1>
-        <p class="mt-2 text-sm text-ink/70">
-          Every order sends a new story out into the world.
-        </p>
-      </header>
+     <header class="border-b border-forest/10 px-5 py-6 sm:px-8 lg:px-10">
+  <div class="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
+    <div>
+      <p class="text-sm text-forest/70">Your shelves are in good hands</p>
+      <h1 class="mt-1 font-display text-3xl font-semibold text-forest sm:text-4xl">
+        Welcome back, Dee
+      </h1>
+      <p class="mt-2 text-sm text-ink/70">
+        Every order sends a new story out into the world.
+      </p>
+    </div>
+
+    <div class="flex items-center gap-3">
+      <label class="relative min-w-0 flex-1 md:w-72 md:flex-none">
+        <span class="sr-only">Search books, orders, or readers</span>
+        <span aria-hidden="true" class="absolute left-4 top-1/2 -translate-y-1/2 text-lg text-forest/60">⌕</span>
+        <input
+          type="search"
+          placeholder="Search the shelves..."
+          class="w-full rounded-full border border-forest/15 bg-white/80 py-3 pl-11 pr-4 text-sm outline-none transition placeholder:text-ink/45 focus:border-sage focus:ring-2 focus:ring-sage/30"
+        />
+      </label>
+
+      <button
+        type="button"
+        aria-label="Dee's profile"
+        class="flex shrink-0 items-center gap-2 rounded-full border border-forest/10 bg-white/70 p-1 pr-3 transition hover:bg-white focus:outline-none focus:ring-2 focus:ring-sage"
+      >
+        <span class="grid size-10 place-items-center rounded-full bg-lavender font-display font-semibold text-forest">D</span>
+        <span class="hidden text-sm font-medium text-forest sm:inline">Dee</span>
+      </button>
+    </div>
+  </div>
+</header> 
 
       <section class="px-5 py-8 sm:px-8 lg:px-10">
         <p class="font-display text-xl italic text-forest">

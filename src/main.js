@@ -68,10 +68,56 @@ document.querySelector('#app').innerHTML = `
 </header> 
 
       <section class="px-5 py-8 sm:px-8 lg:px-10">
-        <p class="font-display text-xl italic text-forest">
-          Your bookshop dashboard will grow here, one page at a time.
-        </p>
-      </section>
+  <div>
+    <p class="text-sm font-medium uppercase tracking-[0.16em] text-forest/60">
+      At a glance
+    </p>
+    <h2 class="mt-1 font-display text-2xl font-semibold text-forest">
+      The shop, in stories and numbers
+    </h2>
+    <p class="mt-1 text-sm text-ink/65">
+      A small snapshot of the worlds moving through your shelves.
+    </p>
+  </div>
+
+  <div class="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
+    <article class="rounded-2xl border border-forest/10 bg-white/80 p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+      <div class="flex items-center justify-between">
+        <p class="text-sm font-medium text-ink/65">Books in stock</p>
+        <span aria-hidden="true" class="grid size-10 place-items-center rounded-xl bg-sage/20 text-lg text-forest">▤</span>
+      </div>
+      <p class="mt-5 font-display text-3xl font-semibold text-forest">1,248</p>
+      <p class="mt-2 text-sm text-forest">↑ 8.4% <span class="text-ink/55">since last month</span></p>
+    </article>
+
+    <article class="rounded-2xl border border-forest/10 bg-white/80 p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+      <div class="flex items-center justify-between">
+        <p class="text-sm font-medium text-ink/65">Orders this week</p>
+        <span aria-hidden="true" class="grid size-10 place-items-center rounded-xl bg-lavender/40 text-lg text-forest">◷</span>
+      </div>
+      <p class="mt-5 font-display text-3xl font-semibold text-forest">186</p>
+      <p class="mt-2 text-sm text-forest">↑ 12 new <span class="text-ink/55">since yesterday</span></p>
+    </article>
+
+    <article class="rounded-2xl border border-forest/10 bg-white/80 p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+      <div class="flex items-center justify-between">
+        <p class="text-sm font-medium text-ink/65">Monthly revenue</p>
+        <span aria-hidden="true" class="grid size-10 place-items-center rounded-xl bg-sage/20 text-lg text-forest">↗</span>
+      </div>
+      <p class="mt-5 font-display text-3xl font-semibold text-forest">RWF 48,260</p>
+      <p class="mt-2 text-sm text-forest">↑ 6.2% <span class="text-ink/55">since last month</span></p>
+    </article>
+
+    <article class="rounded-2xl border border-forest/10 bg-white/80 p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+      <div class="flex items-center justify-between">
+        <p class="text-sm font-medium text-ink/65">Returning readers</p>
+        <span aria-hidden="true" class="grid size-10 place-items-center rounded-xl bg-lavender/40 text-lg text-forest">♡</span>
+      </div>
+      <p class="mt-5 font-display text-3xl font-semibold text-forest">68%</p>
+      <p class="mt-2 text-sm text-forest">↑ 4.1% <span class="text-ink/55">reader loyalty</span></p>
+    </article>
+  </div>
+</section>
     </main>
   </div>
 `

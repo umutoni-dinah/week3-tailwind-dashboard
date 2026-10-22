@@ -296,6 +296,65 @@ document.querySelector('#app').innerHTML = `
     </ul>
   </article>
 </section>
+<section aria-labelledby="add-book-heading" class="px-5 pb-12 sm:px-8 lg:px-10">
+  <div class="rounded-2xl border border-forest/10 bg-white/80 p-5 shadow-sm sm:p-7">
+    <div class="mb-6">
+      <p class="text-sm font-medium uppercase tracking-[0.16em] text-forest/60">Make room for another story</p>
+      <h2 id="add-book-heading" class="mt-1 font-display text-2xl font-semibold text-forest">Add a book</h2>
+      <p class="mt-1 text-sm text-ink/65">Every new title opens a door for a reader.</p>
+    </div>
+
+    <form class="grid grid-cols-1 gap-5 sm:grid-cols-2">
+      <div class="sm:col-span-2">
+        <label for="book-title" class="mb-2 block text-sm font-medium text-forest">Book title</label>
+        <input id="book-title" name="title" type="text" placeholder="e.g. The Midnight Library" required
+          class="w-full rounded-xl border border-forest/15 bg-paper/60 px-4 py-3 text-sm outline-none transition placeholder:text-ink/40 focus:border-sage focus:ring-2 focus:ring-sage/30" />
+      </div>
+
+      <div>
+        <label for="book-author" class="mb-2 block text-sm font-medium text-forest">Author</label>
+        <input id="book-author" name="author" type="text" placeholder="Author's name" required
+          class="w-full rounded-xl border border-forest/15 bg-paper/60 px-4 py-3 text-sm outline-none transition placeholder:text-ink/40 focus:border-sage focus:ring-2 focus:ring-sage/30" />
+      </div>
+
+      <div>
+        <label for="book-category" class="mb-2 block text-sm font-medium text-forest">Category</label>
+        <select id="book-category" name="category" required
+          class="w-full rounded-xl border border-forest/15 bg-paper/60 px-4 py-3 text-sm text-ink outline-none transition focus:border-sage focus:ring-2 focus:ring-sage/30">
+          <option value="">Choose a shelf</option>
+          <option>Fiction</option>
+          <option>Poetry</option>
+          <option>Biography</option>
+          <option>Self-development</option>
+          <option>Children's books</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="book-price" class="mb-2 block text-sm font-medium text-forest">Price (RWF)</label>
+        <input id="book-price" name="price" type="number" min="0" step="100" placeholder="25000" required
+          class="w-full rounded-xl border border-forest/15 bg-paper/60 px-4 py-3 text-sm outline-none transition placeholder:text-ink/40 focus:border-sage focus:ring-2 focus:ring-sage/30" />
+      </div>
+
+      <div>
+        <label for="book-stock" class="mb-2 block text-sm font-medium text-forest">Copies in stock</label>
+        <input id="book-stock" name="stock" type="number" min="0" step="1" placeholder="24" required
+          class="w-full rounded-xl border border-forest/15 bg-paper/60 px-4 py-3 text-sm outline-none transition placeholder:text-ink/40 focus:border-sage focus:ring-2 focus:ring-sage/30" />
+      </div>
+
+      <div class="flex flex-wrap gap-3 pt-1 sm:col-span-2">
+        <button type="button"
+          class="rounded-full bg-forest px-5 py-3 text-sm font-medium text-paper transition hover:bg-forest/90 focus:outline-none focus:ring-2 focus:ring-sage focus:ring-offset-2">
+          Add to the shelves
+        </button>
+        <button type="reset"
+          class="rounded-full border border-forest/15 px-5 py-3 text-sm font-medium text-forest transition hover:bg-sage/10 focus:outline-none focus:ring-2 focus:ring-sage">
+          Clear form
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
     </main>
   </div>
 `

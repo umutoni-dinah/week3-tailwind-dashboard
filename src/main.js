@@ -197,6 +197,105 @@ document.querySelector('#app').innerHTML = `
     </div>
   </div>
 </section>
+<section class="grid grid-cols-1 gap-5 px-5 pb-10 sm:px-8 lg:px-10 xl:grid-cols-2">
+  <article class="rounded-2xl border border-forest/10 bg-white/80 p-5 shadow-sm sm:p-6">
+    <div>
+      <p class="text-sm font-medium uppercase tracking-[0.16em] text-forest/60">Little moments</p>
+      <h2 class="mt-1 font-display text-2xl font-semibold text-forest">Recent activity</h2>
+      <p class="mt-1 text-sm text-ink/65">New stories finding their readers.</p>
+    </div>
+
+    <ul class="mt-5 divide-y divide-forest/10">
+      <li class="flex gap-3 py-4">
+        <span aria-hidden="true" class="grid size-10 shrink-0 place-items-center rounded-full bg-sage/20 text-forest">✦</span>
+        <div class="min-w-0 flex-1">
+          <p class="text-sm text-ink"><span class="font-semibold text-forest">Nia M.</span> ordered <span class="font-medium">The Midnight Library</span></p>
+          <p class="mt-1 text-xs text-ink/55">A new story begins · 10:42 AM</p>
+        </div>
+      </li>
+      <li class="flex gap-3 py-4">
+        <span aria-hidden="true" class="grid size-10 shrink-0 place-items-center rounded-full bg-lavender/40 text-forest">♡</span>
+        <div class="min-w-0 flex-1">
+          <p class="text-sm text-ink"><span class="font-semibold text-forest">Alex P.</span> joined the reader circle</p>
+          <p class="mt-1 text-xs text-ink/55">A new reader at the door · 9:18 AM</p>
+        </div>
+      </li>
+      <li class="flex gap-3 py-4">
+        <span aria-hidden="true" class="grid size-10 shrink-0 place-items-center rounded-full bg-sage/20 text-forest">↗</span>
+        <div class="min-w-0 flex-1">
+          <p class="text-sm text-ink"><span class="font-semibold text-forest">Braiding Sweetgrass</span> is having a moment</p>
+          <p class="mt-1 text-xs text-ink/55">12 copies found new homes · Yesterday</p>
+        </div>
+      </li>
+      <li class="flex gap-3 py-4">
+        <span aria-hidden="true" class="grid size-10 shrink-0 place-items-center rounded-full bg-lavender/40 text-forest">✉</span>
+        <div class="min-w-0 flex-1">
+          <p class="text-sm text-ink">A kind note arrived from <span class="font-semibold text-forest">Sam K.</span></p>
+          <p class="mt-1 text-xs text-ink/55">“It felt like a hug in paper form.” · Yesterday</p>
+        </div>
+      </li>
+    </ul>
+  </article>
+
+  <article class="rounded-2xl border border-forest/10 bg-white/80 p-5 shadow-sm sm:p-6">
+    <div>
+      <p class="text-sm font-medium uppercase tracking-[0.16em] text-forest/60">Readers keep reaching for</p>
+      <h2 class="mt-1 font-display text-2xl font-semibold text-forest">Bestselling books</h2>
+      <p class="mt-1 text-sm text-ink/65">The stories travelling furthest this week.</p>
+    </div>
+
+    <ul class="mt-6 space-y-5">
+      <li>
+        <div class="mb-2 flex items-center justify-between gap-3">
+          <div class="flex min-w-0 items-center gap-3">
+            <span class="grid size-8 shrink-0 place-items-center rounded-lg bg-sage/20 text-sm font-semibold text-forest">1</span>
+            <span class="truncate text-sm font-medium text-forest">The Midnight Library</span>
+          </div>
+          <span class="shrink-0 text-xs text-ink/55">82 sold</span>
+        </div>
+        <div role="progressbar" aria-label="The Midnight Library sales" aria-valuemin="0" aria-valuemax="100" aria-valuenow="82" class="h-2 overflow-hidden rounded-full bg-forest/10">
+          <div class="h-full w-[82%] rounded-full bg-sage"></div>
+        </div>
+      </li>
+      <li>
+        <div class="mb-2 flex items-center justify-between gap-3">
+          <div class="flex min-w-0 items-center gap-3">
+            <span class="grid size-8 shrink-0 place-items-center rounded-lg bg-lavender/40 text-sm font-semibold text-forest">2</span>
+            <span class="truncate text-sm font-medium text-forest">The Book Thief</span>
+          </div>
+          <span class="shrink-0 text-xs text-ink/55">68 sold</span>
+        </div>
+        <div role="progressbar" aria-label="The Book Thief sales" aria-valuemin="0" aria-valuemax="100" aria-valuenow="68" class="h-2 overflow-hidden rounded-full bg-forest/10">
+          <div class="h-full w-[68%] rounded-full bg-lavender"></div>
+        </div>
+      </li>
+      <li>
+        <div class="mb-2 flex items-center justify-between gap-3">
+          <div class="flex min-w-0 items-center gap-3">
+            <span class="grid size-8 shrink-0 place-items-center rounded-lg bg-sage/20 text-sm font-semibold text-forest">3</span>
+            <span class="truncate text-sm font-medium text-forest">Small Things Like These</span>
+          </div>
+          <span class="shrink-0 text-xs text-ink/55">54 sold</span>
+        </div>
+        <div role="progressbar" aria-label="Small Things Like These sales" aria-valuemin="0" aria-valuemax="100" aria-valuenow="54" class="h-2 overflow-hidden rounded-full bg-forest/10">
+          <div class="h-full w-[54%] rounded-full bg-sage"></div>
+        </div>
+      </li>
+      <li>
+        <div class="mb-2 flex items-center justify-between gap-3">
+          <div class="flex min-w-0 items-center gap-3">
+            <span class="grid size-8 shrink-0 place-items-center rounded-lg bg-lavender/40 text-sm font-semibold text-forest">4</span>
+            <span class="truncate text-sm font-medium text-forest">The House in the Cerulean Sea</span>
+          </div>
+          <span class="shrink-0 text-xs text-ink/55">41 sold</span>
+        </div>
+        <div role="progressbar" aria-label="The House in the Cerulean Sea sales" aria-valuemin="0" aria-valuemax="100" aria-valuenow="41" class="h-2 overflow-hidden rounded-full bg-forest/10">
+          <div class="h-full w-[41%] rounded-full bg-lavender"></div>
+        </div>
+      </li>
+    </ul>
+  </article>
+</section>
     </main>
   </div>
 `
